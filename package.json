@@ -1,0 +1,60 @@
+{
+  "name": "react18-webpack5-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InuYashaDo/react18-webpack5-ts.git"
+  },
+  "keywords": [
+    "xixi"
+  ],
+  "author": "xixi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InuYashaDo/react18-webpack5-ts/issues"
+  },
+  "homepage": "https://github.com/InuYashaDo/react18-webpack5-ts#readme",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "lint": "npm run lint-eslint && npm run lint-stylelint",
+    "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.js,.jsx src",
+    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,scss,css}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --config .eslintrc.js"
+    ],
+    "*.{less,scss,css}": [
+      "stylelitn --config .stylelintrc.js"
+    ],
+    "*.{ts,tsx,js,jsx,less,scss,css,md,json,html}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {}
+}
