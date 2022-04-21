@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS"
     }
   },
@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "husky": "^4",
-    "lint-staged": "^12.4.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.6.2",
     "stylelint": "^14.7.1",
     "stylelint-config-prettier": "^9.0.3",
