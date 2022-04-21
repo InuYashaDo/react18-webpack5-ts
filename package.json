@@ -20,8 +20,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint": "npm run lint-eslint && npm run lint-stylelint",
     "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.js,.jsx src",
-    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,scss,css}",
-    "prepare": "husky install"
+    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,scss,css}"
   },
   "husky": {
     "hooks": {
@@ -48,7 +47,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^42.0.0",
-    "husky": "^7.0.4",
+    "husky": "^4",
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
     "stylelint": "^14.7.1",
@@ -57,5 +56,6 @@
     "stylelint-config-standard": "^25.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "typescript": "^4.6.3"
-  }
+  },
+  "dependencies": {}
 }
